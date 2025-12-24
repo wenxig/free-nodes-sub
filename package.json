@@ -1,0 +1,22 @@
+{
+  "name": "free-nodes-sub",
+  "version": "0.0.1",
+  "scripts": {
+    "build": "vite build",
+    "run": "bun ./dist/index.mjs",
+    "dev": "bun run build && bun run run"
+  },
+  "main": "./src/index.ts",
+  "devDependencies": {
+    "@liuli-util/vite-plugin-node": "^0.10.0",
+    "@types/node": "latest",
+    "typescript": "^5.8.3",
+    "vite": "npm:rolldown-vite@latest"
+  },
+  "pnpm": {
+    "overrides": {
+      "vite": "npm:rolldown-vite@latest"
+    },
+    "onlyBuiltDependencies": []
+  }
+}

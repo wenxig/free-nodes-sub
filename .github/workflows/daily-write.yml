@@ -1,0 +1,61 @@
+name: Wiki Fetch & Update
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+    - cron: '0 4 * * *'
+    - cron: '0 12 * * *'
+    - cron: '0 16 * * *'
+    - cron: '0 20 * * *'
+
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'data/**'
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-wiki:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '23'
+
+       # 安装 pnpm CLI
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 10   # 或你需要的 pnpm 版本
+
+      # 用 pnpm 安装依赖
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm run build
+        
+      - name: Fetch and extract Wiki pages
+        env:
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: node dist/index.mjs
+
+      - name: Commit & Push generated files
+        if: ${{ github.ref == 'refs/heads/main' && github.actor != 'github-actions[bot]' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git diff --cached --quiet || git commit -m "chore: wiki update [skip ci]"
+          git push
