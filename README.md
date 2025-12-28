@@ -27,8 +27,8 @@ https://raw.githubusercontent.com/wenxig/free-nodes-sub/refs/heads/main/data/cla
 
 有了好的节点，该看什么内容呢？当然是**Delta Comic**了，包罗万象的内容，人性化的内容，你的夜晚好助手
 
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=wenxig&repo=delta-comic)](https://github.com/wenxig/delta-comic)
+[![Readme Card](https://wenxig-grs.vercel.app/api/pin/?username=wenxig&repo=delta-comic&theme=transparent)](https://github.com/wenxig/delta-comic)
 
 ## 其他节点
 
-[![Alvin9999的节点抓取](https://github-readme-stats.vercel.app/api/pin/?username=wenxig&repo=dongtai-sub)](https://github.com/wenxig/dongtai-sub)
+[![Alvin9999的节点抓取](https://wenxig-grs.vercel.app/api/pin/?username=wenxig&repo=dongtai-sub&theme=transparent)](https://github.com/wenxig/dongtai-sub)
