@@ -1,17 +1,6 @@
 name: Wiki Fetch & Update
 
 on:
-  schedule:
-    - cron: '0 */1 * * *'
-
-  # 用户 push 触发，排除脚本写入的 data 目录
-  push:
-    branches:
-      - main
-    paths-ignore:
-      - 'data/**'
-      - 'README.md'
-
   workflow_dispatch:
 
 permissions:
