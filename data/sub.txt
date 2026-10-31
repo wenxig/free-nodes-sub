@@ -1,2 +1,1 @@
-  
-
+vless://1@https://raw.githubusercontent.com/free-nodes/v2rayfree/refs/heads/main/sub:11451?encryption=none&security=none&type=tcp&headerType=none#%E4%BD%BF%E7%94%A8%E5%AE%98%E6%96%B9%E8%AE%A2%E9%98%85%E4%BB%A3%E6%9B%BF%EF%BC%81%E8%A7%81address
