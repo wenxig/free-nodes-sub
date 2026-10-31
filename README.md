@@ -1,5 +1,19 @@
 # Free Nodes Sub
 
+> [!WARNING]
+> 项目已经放弃维护，使用官方订阅链接
+> ```txt
+> https://raw.githubusercontent.com/free-nodes/v2rayfree/refs/heads/main/sub
+> ```  
+> 项目诞生初衷为解决官方无固定订阅链接的问题，现在问题解决了，使命完成。
+
+## 其他节点
+
+[![Alvin9999的节点抓取](https://wenxig-grs.vercel.app/api/pin/?username=wenxig&repo=dongtai-sub&theme=transparent)](https://github.com/wenxig/dongtai-sub)
+
+---
+<del>
+
 ## ✨程序特点
 
 - ⚡高自动: 自动抓取[free-nodes/v2rayfree](https://github.com/free-nodes/v2rayfree)的节点
@@ -31,8 +45,5 @@ https://raw.githubusercontent.com/wenxig/free-nodes-sub/refs/heads/main/data/sub
 
 [![Readme Card](https://wenxig-grs.vercel.app/api/pin/?username=delta-comic&repo=delta-comic&theme=transparent)](https://github.com/delta-comic/delta-comic)
 
-## 其他节点
-
-[![Alvin9999的节点抓取](https://wenxig-grs.vercel.app/api/pin/?username=wenxig&repo=dongtai-sub&theme=transparent)](https://github.com/wenxig/dongtai-sub)
-
 更新于 2026-10-31 22:18:02
+</del>
